@@ -4,9 +4,10 @@ let list = [];
 // then i need to push elements to the array given by the user with a condition and a cycle
 while(true) {
     let word = prompt('Insert an item to add to the list');
-    list.push(word);
-    console.log(list);
     if(word === 'stop') {
         break;
-    } 
+    } else {
+        list.push(word);
+        console.log(list);    
+    }
 }
